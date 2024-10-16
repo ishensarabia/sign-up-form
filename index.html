@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Odin Signup Page</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <script src="script.js"></script>
+    <div class="container">
+      <div class="left-section">
+        <div class="logo">
+          <h1>ODIN</h1>
+        </div>
+      </div>
+
+      <div class="right-section">
+        <p>
+          This is not a real online service! You know you need something like
+          this in your life to help you realize your deepest dreams. Sign up
+          <strong>now</strong> to get started.
+        </p>
+        <p><em>You know you want to.</em></p>
+        <h2>Let's do this!</h2>
+        <form>
+          <div class="input-group">
+            <label for="first-name">First Name</label>
+            <input type="text" id="first-name" placeholder="Thor" />
+          </div>
+          <div class="input-group">
+            <label for="last-name">Last Name</label>
+            <input type="text" id="last-name" placeholder="Odinson" />
+          </div>
+          <div class="input-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="Enter your email" />
+          </div>
+          <div class="input-group">
+            <label for="phone-number">Phone Number</label>
+            <input
+              type="tel"
+              id="phone-number"
+              placeholder="Enter your phone number"
+            />
+          </div>
+          <div class="input-group">
+            <label for="password">Password</label>
+            <input
+              type="password"
+              id="password"
+              placeholder="Enter your password"
+            />
+          </div>
+          <div class="input-group">
+            <label for="confirm-password">Confirm Password</label>
+            <input
+              type="password"
+              id="confirm-password"
+              placeholder="Confirm your password"
+            />
+            <p class="error">* Passwords do not match</p>
+          </div>
+
+          <button type="submit" class="submit-btn">Create Account</button>
+        </form>
+
+        <p>Already have an account? <a href="#">Log in</a></p>
+      </div>
+    </div>
+  </body>
+</html>
