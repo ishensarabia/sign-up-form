@@ -1,125 +1,169 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: 'Arial', sans-serif;
-    background-color: #f5f5f5;
-    color: #333;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+  font-family: "Arial", sans-serif;
+  background-color: #f5f5f5;
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
 
 .container {
-    display: flex;
-    height: 100%;
-    width: 100%;
-    background-color: white;
-    border-radius: 8px;
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
-    overflow: hidden;
+  display: flex;
+  height: 100%;
+  width: 100%;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
 }
 
 .left-section {
-    flex: 1;
-    background-image: url("Background.jpeg");
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 20px;
-    color: white;
+  flex: 0.5;
+  background-image: url("Background.jpeg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  color: white;
+  width: 25%;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
 }
 
 .logo h1 {
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 350px;
-    letter-spacing: 5px;
-    margin-bottom: 20px;
-    display: flex;
-    align-items: center;
-    background-color: rgba(0, 0, 0, 0.5);
-    width: 100%;
-    text-align: center;
+  font-family: "Times New Roman", Times, serif;
+  letter-spacing: 5px;
+  display: flex;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  text-align: center;
 }
 
 .left-section p {
-    font-size: 16px;
-    line-height: 1.6;
+  font-size: 16px;
+  line-height: 1.6;
 }
 
 .right-section {
-    flex: 1;
-    padding: 50px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+  flex: 1;
+  padding: 1px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .right-section h2 {
-    font-size: 28px;
-    margin-bottom: 20px;
+  font-size: 28px;
+  margin-top: 20px;
+}
+
+.right-section p {
+  font-size: 27px;
+  margin-top: 10px;
+}
+
+.form-section {
+  margin-top: 40px;
+  padding: 40px;
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
 form {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 25px;
+  width: 100%;
 }
 
 .input-group {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
+  width: calc(50% - 25px); /* Adjust width to fit two per row */
+
 }
 
 .input-group label {
-    font-size: 14px;
-    margin-bottom: 5px;
+  font-size: 14px;
+  letter-spacing: 1px;
+  font-weight: 600;
+  font-variant-caps: all-small-caps;
 }
 
 .input-group input {
-    padding: 10px;
-    font-size: 16px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
 }
 
 .input-group .error {
-    color: red;
-    font-size: 12px;
-    margin-top: 5px;
-    visibility: hidden;
+  text-align: start;
+  color: red;
+  font-size: 12px;
+  visibility: hidden;
+  margin: 0;
+}
+
+.input-group input:focus {
+  border-color: #2f386b;
+  box-shadow: 0 0 5px rgba(47, 56, 107, 0.2);
+  outline: none;
 }
 
 .submit-btn {
-    background-color: #556b2f;
-    color: white;
-    padding: 15px;
-    font-size: 16px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
+  background-color: #556b2f;
+  color: white;
+  padding: 15px;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  width: 50%;
+  margin-left: 20px;
+  margin-top: 20px;
 }
 
+.log-in{
+  margin-top: 20px;
+}
+
+.log-in p{
+  font-size: 20px;
+}
 
 .submit-btn:hover {
-    background-color: #6b8e23;
+  background-color: #6b8e23;
 }
 
 p {
-    margin-top: 20px;
+  margin: 20px;
+  font-weight: 00;
 }
 
 p a {
-    color: #556b2f;
-    text-decoration: none;
+  color: #3d4e20;
+  text-decoration: none;
+  font-weight: 600;
 }
 
 p a:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
