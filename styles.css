@@ -38,19 +38,18 @@ body {
 
 .logo {
   flex: 1;
-  margin-bottom: 500px;
+  margin-bottom: 550px;
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
   background-color: rgba(0, 0, 0, 0.5);
-  height: 100px; /* Adjust the height as needed */
+  height: auto; /* Adjust the height as needed */
 }
 
 .logo img {
   width: 100px;
-  height: 100px;
-  margin-right: 10px;
+  height: 150px;
 }
 
 .logo h1 {
