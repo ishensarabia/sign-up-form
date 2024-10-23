@@ -1,3 +1,13 @@
+@font-face {
+  font-family: "Norse";
+  src: url("https://db.onlinewebfonts.com/t/fd1ad3a0f95210975d2f5607501020b5.eot");
+  src: url("https://db.onlinewebfonts.com/t/fd1ad3a0f95210975d2f5607501020b5.eot?#iefix")format("embedded-opentype"),
+  url("https://db.onlinewebfonts.com/t/fd1ad3a0f95210975d2f5607501020b5.woff2")format("woff2"),
+  url("https://db.onlinewebfonts.com/t/fd1ad3a0f95210975d2f5607501020b5.woff")format("woff"),
+  url("https://db.onlinewebfonts.com/t/fd1ad3a0f95210975d2f5607501020b5.ttf")format("truetype"),
+  url("https://db.onlinewebfonts.com/t/fd1ad3a0f95210975d2f5607501020b5.svg#Norse")format("svg");
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -26,7 +36,7 @@ body {
 
 .left-section {
   flex: 0.5;
-  background-image: url("Background.jpeg");
+  background-image: url("photo-1585202900225-6d3ac20a6962.avif");
   background-size: cover;
   background-position: center;
   display: flex;
@@ -34,6 +44,22 @@ body {
   justify-content: center;
   color: white;
   width: 25%;
+}
+
+
+.image-credits {
+  font-size: 12px;
+  text-align: center;
+  position: absolute; /* Position it absolutely */
+  bottom: 10px; /* Adjust the distance from the bottom */
+  left: 50%;
+  transform: translateX(-250%); /* Center it horizontally */
+}
+
+
+.image-credits a {
+  color: white;
+  text-decoration: underline;
 }
 
 .logo {
@@ -48,14 +74,14 @@ body {
 }
 
 .logo img {
-  width: 100px;
+  width: 120px;
   height: 150px;
 }
 
 .logo h1 {
-  font-family: "Times New Roman", Times, serif;
+  font-family: "Norse";
   letter-spacing: 5px;
-  font-size: 80px;
+  font-size: 100px;
 }
 
 .left-section p {
@@ -104,7 +130,6 @@ form {
   display: flex;
   flex-direction: column;
   width: calc(50% - 25px); /* Adjust width to fit two per row */
-
 }
 
 .input-group label {
@@ -148,11 +173,11 @@ form {
   margin-top: 20px;
 }
 
-.log-in{
+.log-in {
   margin-top: 20px;
 }
 
-.log-in p{
+.log-in p {
   font-size: 20px;
 }
 
